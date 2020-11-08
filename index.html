@@ -1,18 +1,23 @@
-<?php
-// после тега more
-function adsgoolge_ssd($content) {
-    $google_ads='<div id="adsens"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- WEB -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-69360944444444"
-     data-ad-slot="444444444"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-    ';
-    $content=preg_replace('#<span.*?id="more-(.*?)".*?></span>#','<span id="more-\1"></span></p>'.$google_ads.'<BR><p style="text-align: justify;">',$content);
-    return $content;
-    }
-    add_filter('the_content', 'adsgoolge_ssd');
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Академия HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <main>
+      <a href="https://htmlacademy.ru">
+        <img src="img/bane.svg" width="300" height="300" alt="HTML Academy">
+      </a>
+
+      <h1>Академия HTML</h1>
+
+      <p>
+        <a href="https://github.com/htmlacademy/htmlacademy.github.io">github.com/htmlacademy/htmlacademy.github.io</a>
+      </p>
+    </main>
+
+  </body>
+</html>
