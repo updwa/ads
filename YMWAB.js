@@ -1,5 +1,5 @@
 {
-	"version": "8.0",
+	"version": "7.0",
 	"download": "https://ymmods-official.blogspot.com/2021/04/ymwab.html",
 	"update": [
 		{
